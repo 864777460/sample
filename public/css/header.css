@@ -17,7 +17,12 @@ html,body{
 	margin-left: 3%;
 	width: 30%;
 }
-
+.title a{
+	color: white;
+}
+.title a:hover{
+	color: blue;
+}
 .login{
 	line-height: 50px;
 	margin-left: 80%;

@@ -1,4 +1,4 @@
   <div class="header">
-  	<div class="title">Weibo App</div>
-  	<div class="login"><a href="">帮助</a><a href="" style="margin-left: 10%;">登录</a></div>
+  	<div class="title"><a href="{{route('home')}}">Weibo App</a></div>
+  	<div class="login"><a href="{{ route('help') }}">帮助</a><a href="{{route('about')}}" style="margin-left: 10%;">登录</a></div>
   </div>
