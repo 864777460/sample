@@ -1,1 +1,14 @@
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+nav.navbar.navbar-expand-lg {
+    margin-bottom: 20px;
+}
+
+nav{
+	
+}
