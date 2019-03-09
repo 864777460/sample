@@ -1,17 +1,17 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>@yield('title', 'Weibo App') - Laravel 入门教程</title>
-    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/header.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/footer.css')}}">
+    <title>@yield('title', 'Sample App') - Laravel 入门教程</title>
+    <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-
-@include('layouts._header');
+    @include('layouts._header')
 
     <div class="container">
-      @yield('content')
-      @include('layouts._footer')
+      <div class="col-md-offset-1 col-md-10">
+        @yield('content')
+        @include('layouts._footer')
+      </div>
     </div>
   </body>
 </html>
