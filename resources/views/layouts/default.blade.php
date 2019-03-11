@@ -11,6 +11,7 @@
 
     <div style="width: 100%;float: left;">
       <div class="col-md-offset-1 col-md-10">
+        @include('shared._message')
         @yield('content')
         @include('layouts._footer')
       </div>
