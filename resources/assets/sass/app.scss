@@ -48,7 +48,7 @@ p {
 }
 
 /* header */
-
+header{
 .navbar-inverse {
   background-color: $navbar-color;
 }
@@ -66,7 +66,7 @@ p {
     color: #fff;
   }
 }
-
+}
 /* footer */
 
 footer {
@@ -135,3 +135,5 @@ section.user_info{
   max-width: 50px;
   border-radius: 50%;
 }
+
+

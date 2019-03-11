@@ -8385,11 +8385,11 @@ p {
 
 /* header */
 
-.navbar-inverse {
+header .navbar-inverse {
   background-color: #3c3e42;
 }
 
-#logo {
+header #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
@@ -8400,7 +8400,7 @@ p {
   font-weight: bold;
 }
 
-#logo:hover {
+header #logo:hover {
   color: #fff;
 }
 

@@ -1,4 +1,4 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar  navbar-inverse" style="float: left;width: 100%;">
   <div class="container">
     <div class="col-md-offset-1 col-md-10">
       <a href="/" id="logo">Sample App</a>
