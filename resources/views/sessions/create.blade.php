@@ -23,12 +23,14 @@
  			<input type="password" name="password" class="layui-input">
  		</div>
  	</div>
-
+   <div class="checkbox" style="margin-left: 50px;">
+   	<label><input type="checkbox" name="remember">记住我</label>
+   </div>
  	<input type="submit" class="layui-btn layui-btn-normal" value="提交">
  	 </form>
  	 <div class="underline"></div> 
 
- 	 <div class="footer">还没账号？<a href="#">马上注册</a></div>
+ 	 <div class="footer">还没账号？<a href="{{route('signup')}}">马上注册</a></div>
  </div>
 
 

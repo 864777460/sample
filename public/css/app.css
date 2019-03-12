@@ -8385,6 +8385,14 @@ p {
 
 /* header */
 
+header #logout {
+  cursor: default;
+}
+
+header #logout:hover {
+  background-color: transparent;
+}
+
 header .navbar-inverse {
   background-color: #3c3e42;
 }

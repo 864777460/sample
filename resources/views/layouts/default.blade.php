@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
     <link rel="stylesheet" type="text/css" href="{{URL::asset('layui/css/layui.css')}}">
     <script type="text/javascript" src="{{URL::asset('layui/layui.js')}}"></script>
+
   </head>
   <body>
     @include('layouts._header')
@@ -16,5 +17,6 @@
         @include('layouts._footer')
       </div>
     </div>
+  <script src="/js/app.js"></script>
   </body>
 </html>
