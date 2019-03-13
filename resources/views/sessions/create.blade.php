@@ -30,7 +30,7 @@
  	 </form>
  	 <div class="underline"></div> 
 
- 	 <div class="footer">还没账号？<a href="{{route('signup')}}">马上注册</a></div>
+ 	 <div class="footer">还没账号？<a href="{{route('signup')}}">马上注册</a><a style="margin-left: 20px;" href="{{ route('password.request') }}">忘记密码</a></div>
  </div>
 
 
