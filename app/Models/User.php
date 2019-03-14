@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-
+use App\Models\Status;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Notifications\ResetPassword;
