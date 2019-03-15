@@ -2,6 +2,7 @@
 
 namespace App\Models;
 use App\Models\Status;
+use App\Models\Follower;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Notifications\ResetPassword;
@@ -51,5 +52,31 @@ class User extends Authenticatable
 
     public function feed(){
         return $this->statuses()->orderBy('created_at','desc');
+    }
+
+    public function followers(){
+        return $this->belongsToMany(User::class,'followers','user_id','follower_id');
+    }
+     public function followings()
+    {
+        return $this->belongsToMany(User::class, 'followers', 'follower_id', 'user_id');
+    }
+
+    public function follow($user_ids){
+         if (!is_array($user_ids)) {
+             $user_ids = compact('user_ids');
+         }
+         $this->followings()->sync($user_ids);
+    }
+
+    public function unfollow($user_ids){
+        if (!is_array($user_ids)) {
+            $user_ids = compact('user_ids');
+        }
+        $this->followings()->detach($user_ids);
+    }
+
+    public function isFollowing($user_ids){
+        return $this->followings()->contains($user_ids);
     }
 }
